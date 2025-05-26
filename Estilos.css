@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0d47a1, #e3f2fd);
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F0F8FF;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+.carrito-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.carrito-btn:hover {
+  background-color: #1565c0;
+  transform: scale(1.1);
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.bienvenida h1 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.categoria {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.tarjeta {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 340px;
+  color: #111;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tarjeta h3 {
+  color: #1976d2;
+  margin: 12px 0 6px;
+}
+
+.precio-compra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+.boton-compra {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.boton-compra:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+.contacto {
+  padding: 40px 20px;
+  background: #bbdefb;
+  text-align: center;
+  color: #111;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.contacto button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contacto button:hover {
+  background: #1565c0;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.redes {
+  margin-bottom: 12px;
+}
+
+.redes img {
+  width: 32px;
+  margin: 0 12px;
+  vertical-align: middle;
+  filter: brightness(90%);
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.redes img:hover {
+  filter: brightness(120%);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu a {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .carrito-btn {
+    margin-top: 10px;
+  }
+
+  .tarjeta {
+    max-width: 95%;
+  }
+
+  .contacto form {
+    max-width: 100%;
+  }
+  }
